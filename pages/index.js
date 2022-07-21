@@ -8,7 +8,10 @@ export default function Home() {
       width: calc(100vw - 2rem);
       height: 100vw;
       margin-top: -35vw;
-      
+    }
+    
+    model-viewer#reveal {
+      --poster-color: transparent;
     }
   </style>
   
@@ -16,7 +19,7 @@ export default function Home() {
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   
   <!-- Use it like any other HTML element -->
-  <model-viewer src="/logo.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="/music_hall_01_1k.hdr" seamless-poster shadow-intensity="1" camera-controls enable-pan camera-orbit="-1.758deg 92.23deg auto" auto-rotate min-camera-orbit="auto 92.23deg auto" max-camera-orbit="auto 92.23deg auto"></model-viewer>`
+  <model-viewer src="/logo.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="/music_hall_01_1k.hdr" seamless-poster shadow-intensity="1" camera-controls enable-pan camera-orbit="-1.758deg 92.23deg auto" auto-rotate min-camera-orbit="auto 92.23deg auto" max-camera-orbit="auto 92.23deg auto" disable-zoom auto-rotate-delay="0" rotation-per-second="-100%"></model-viewer>`
   
   return (
     <div className={styles.container}>
