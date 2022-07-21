@@ -1,0 +1,32 @@
+.title {
+  font-size: 1.5rem;
+  color: #FF9E68;
+  text-align: center
+}
+
+.ty {
+  width: 100%;
+}
+
+.container {
+  padding: 2rem 1rem;
+}
+
+.text {
+  color: white;
+  line-height: 1.5;
+  margin-top: -15vw;
+  font-size: 1.2em;
+  font-weight: 600;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.text p:nth-child(n+2) {
+  color: rgba(255, 255, 255, .5);
+}
+
+.signature {
+  font-size: 1rem;
+  font-weight: 500;
+}
